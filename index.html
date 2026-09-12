@@ -17,11 +17,6 @@
     background:#0a0a0a;
     font-family:'Poppins', sans-serif;
     overflow-x:hidden;
-    scrollbar-width:none; /* Firefox */
-    -ms-overflow-style:none; /* IE/Edge lama */
-  }
-  html::-webkit-scrollbar, body::-webkit-scrollbar{
-    display:none; /* Chrome, Safari, Edge baru */
   }
   #stage{
     position:relative;
@@ -382,7 +377,7 @@
         <div class="info">
           <div class="buy-row">
             <button class="buy-btn">Buy Now</button>
-            <span class="price">$32</span>
+            <span class="price">€7.50</span>
           </div>
           <p class="desc">Fresh raspberries blended into a creamy yogurt base, topped with mint and toasted coconut.</p>
         </div>
@@ -415,7 +410,7 @@
         <div class="info">
           <div class="buy-row">
             <button class="buy-btn">Buy Now</button>
-            <span class="price">$29</span>
+            <span class="price">€6.90</span>
           </div>
           <p class="desc">Tangy kiwi and peach swirled over crunchy granola, finished with a squeeze of lime.</p>
         </div>
@@ -448,7 +443,7 @@
         <div class="info">
           <div class="buy-row">
             <button class="buy-btn">Buy Now</button>
-            <span class="price">$34</span>
+            <span class="price">€8.20</span>
           </div>
           <p class="desc">Wild blueberries folded into silky yogurt, layered with honey granola and toasted oats.</p>
         </div>
@@ -481,7 +476,7 @@
         <div class="info">
           <div class="buy-row">
             <button class="buy-btn">Buy Now</button>
-            <span class="price">$27</span>
+            <span class="price">€6.50</span>
           </div>
           <p class="desc">Ripe strawberry slices over a smooth berry base, dusted with chia and toasted almonds.</p>
         </div>
@@ -545,7 +540,7 @@
     <div class="info">
       <div class="buy-row">
         <button class="buy-btn">Buy Now</button>
-        <span class="price" id="menuPrice">$32</span>
+        <span class="price" id="menuPrice">€7.50</span>
       </div>
       <p class="desc" id="menuDesc">Fresh raspberries blended into a creamy yogurt base, topped with mint and toasted coconut.</p>
     </div>
@@ -679,13 +674,13 @@
 
   // ---------- MENU PAGE (page 2): instant background swap, bowl slides left/right ----------
   const MENU_FLAVORS = [
-    { key:'pinkberry',   name:'PINKBERRY',   price:'$32', c1:'#8c1a28', c2:'#3f0a10',
+    { key:'pinkberry',   name:'PINKBERRY',   price:'€7.50', c1:'#8c1a28', c2:'#3f0a10',
       desc:'Fresh raspberries blended into a creamy yogurt base, topped with mint and toasted coconut.' },
-    { key:'peachberry',  name:'PEACHBERRY',  price:'$29', c1:'#7a6a2c', c2:'#332c10',
+    { key:'peachberry',  name:'PEACHBERRY',  price:'€6.90', c1:'#7a6a2c', c2:'#332c10',
       desc:'Tangy kiwi and peach swirled over crunchy granola, finished with a squeeze of lime.' },
-    { key:'blueberry',   name:'BLUEBERRY',   price:'$34', c1:'#2b3399', c2:'#0f1240',
+    { key:'blueberry',   name:'BLUEBERRY',   price:'€8.20', c1:'#2b3399', c2:'#0f1240',
       desc:'Wild blueberries folded into silky yogurt, layered with honey granola and toasted oats.' },
-    { key:'strawberry',  name:'STRAWBERRY',  price:'$27', c1:'#7a1002', c2:'#320600',
+    { key:'strawberry',  name:'STRAWBERRY',  price:'€6.50', c1:'#7a1002', c2:'#320600',
       desc:'Ripe strawberry slices over a smooth berry base, dusted with chia and toasted almonds.' }
   ];
   let menuIndex = 0;
